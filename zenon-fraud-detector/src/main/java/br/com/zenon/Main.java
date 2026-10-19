@@ -26,6 +26,7 @@ public class Main {
         var transactionIngestor = new TransactionIngestor();
 
         List<Transaction> transactions = transactionIngestor.read("data/PS_20174392719_1491204439457_log.csv");
+        IO.println("Quantidade de Transações: " + transactions.size());
         transactions.stream().limit(10).forEach(IO::println);
 
         IO.println("--------------------------");
