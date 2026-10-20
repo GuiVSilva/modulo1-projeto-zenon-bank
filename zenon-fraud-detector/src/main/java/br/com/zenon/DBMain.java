@@ -1,6 +1,5 @@
 package br.com.zenon;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 public class DBMain {
@@ -14,8 +13,8 @@ public class DBMain {
         var transactionIngestor = new TransactionIngestor();
         List<Transaction> transactions = transactionIngestor.read("data/PS_20174392719_1491204439457_log.csv");
         IO.println("Quantidade de Transações: " + transactions.size());
-        IO.println("Iniciando adição das transações no BD...");
 
+        IO.println("Iniciando adição das transações no BD...");
         transactions.forEach(repository::save);
 
         long endTimeSQL = System.nanoTime();
