@@ -1,4 +1,6 @@
-package br.com.zenon;
+package br.com.zenon.app;
+
+import br.com.zenon.report.TransactionReport;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;

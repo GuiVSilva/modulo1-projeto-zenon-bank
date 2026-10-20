@@ -1,4 +1,13 @@
-package br.com.zenon;
+package br.com.zenon.app;
+
+import br.com.zenon.repository.memory.TransactionListRepository;
+import br.com.zenon.ingestion.TransactionIngestor;
+import br.com.zenon.repository.TransactionRepository;
+import br.com.zenon.analysis.FraudAnalyzer;
+import br.com.zenon.model.Transaction;
+import br.com.zenon.model.TransactionCustomer;
+import br.com.zenon.repository.memory.TransactionMapRepository;
+import br.com.zenon.model.TransactionType;
 
 import java.math.BigDecimal;
 import java.util.List;

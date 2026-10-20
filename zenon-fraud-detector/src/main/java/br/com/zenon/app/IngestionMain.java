@@ -1,5 +1,7 @@
-package br.com.zenon;
+package br.com.zenon.app;
 
+import br.com.zenon.repository.mysql.TransactionSQLRepository;
+import br.com.zenon.ingestion.EfficientTransactionIngestor;
 
 public class IngestionMain {
     void main() {

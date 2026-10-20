@@ -1,4 +1,4 @@
-package br.com.zenon;
+package br.com.zenon.infrastructure.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
